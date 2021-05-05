@@ -22,11 +22,10 @@ p {
 #logo {
     width: 100px;
     height: 50px;
-    position: absolute;
 }
 
 header h1 {
-    margin-top: 50px;
+
     font-size: large;
     font-weight: bold;
 }
@@ -37,16 +36,21 @@ header {
 
 /* Style de la barre de navigation */
 
+#banner {
+    display: flex;
+    justify-content: space-between;
+}
+
 nav ul {
     display: flex;
     justify-content: flex-end;
-    margin-right: 15px;
-    padding-right: 30px;
+    margin-right: 1%;
+    padding-right: 10%;
     list-style-type: none;
 }
 
 nav li {
-    padding: 5px;
+    padding: 2%;
     text-decoration: none;
 }
 
@@ -54,7 +58,7 @@ nav li {
 
 #search {
     border: 1px solid rgb(202, 196, 196);
-    width: 300px;
+    width: 50%;
     display: flex;
     align-items: center;
     border-radius: 10px 10px 10px 10px;
@@ -99,7 +103,7 @@ header button {
     list-style-type: none;
     display: flex;
     justify-content: space-around;
-    width: 650px;
+    width: 50%;
 }
 
 #filtres li {

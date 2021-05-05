@@ -5,12 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" media="screen and (max-width: 1024px)" href="mobile-resolution.css"/>
     <link rel="stylesheet" href="fontawesome/all.css">
     <title>Reservia</title>
 </head>
 <body>
 <!-- En-tête -->
     <header>
+        <div id="banner">
 <!-- logo Réservia -->
             <img id="logo" src="images/logo/Reservia@3x.png" alt="logo">
 <!-- Menu en haut à droite, Hébergements, Activités, S'inscrire -->
@@ -21,9 +23,14 @@
                     <li><a href="#"><strong>S'inscrire</strong></a></li>
                 </ul>
             </nav>
+        </div>
+
 <!-- Titre et sous-titre -->
-        <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-        <p>En plein centre ville ou en pleine nature</p>
+        <div id="title">
+            <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+            <p>En plein centre ville ou en pleine nature</p>
+        </div>
+        
 <!-- Barre de recherche -->
         <div id="search">
             <i class="fas fa-map-marker-alt"></i>

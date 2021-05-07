@@ -1,0 +1,358 @@
+@font-face {
+    font-family: 'RalewayMedium';
+    src: url(police/Raleway-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'RalewayBold';
+    src: url(police/Raleway-SemiBold.ttf);
+}
+
+body {
+    font-family: 'RalewayMedium';
+}
+
+h1, h2 {
+    font-family: 'RalewayBold';
+}
+
+h2 {
+    font-size:small;
+    font-weight: bold;
+}
+
+p {
+    font-size: small;
+}
+
+/* Style du Header */
+
+#logo {
+    width: 100px;
+    height: 50px;
+}
+
+header h1 {
+
+    font-size: large;
+    font-weight: bold;
+}
+
+header {
+    margin-left: 3%;
+}
+
+/* Style de la barre de navigation */
+
+#banner {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    margin-right: 15px;
+    align-items: flex-end;
+    width: 40%;
+}
+#logo {
+    width: 100px;
+    height: 50px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+nav a:hover {
+    border-top: 2px solid blue;
+    color: blue;
+}
+
+#banner button {
+    border: none;
+    background: none;
+}
+
+#banner button a {
+    color: rgb(0, 140, 255);
+    font-size: medium;
+}
+
+.menu:nth-child(2) {
+    color: blue;
+}
+
+
+/* Syle de la barre de recherche */
+
+#search {
+    border: 1px solid rgb(202, 196, 196);
+    width: 30%;
+    display: flex;
+    align-items: center;
+    border-radius: 10px 10px 10px 10px;
+    justify-content: space-between;
+}
+
+#search i {
+    background-color: rgb(238, 235, 235);
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px 0 0 10px;
+}
+
+#search input {
+    border: none;
+}
+
+::placeholder {
+    color: black;
+    font-weight: bold;
+}
+
+#search button {
+    background-color: rgb(0, 102, 255);
+    color: white;
+    height: 30px;
+    border-radius: 0 10px 10px 0;
+    border: none;
+}
+
+/* Syle de la zone de filtres */
+
+#filtres {
+    display: flex;
+    align-items: center;
+}
+
+#filtres ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+#filtres li {
+  
+    display: flex;
+    border: 2px solid gainsboro;
+    border-left-style: none;
+    border-radius: 30px;
+    height: 30px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px 0 0;
+    margin: 2%;
+    white-space: nowrap;
+}
+
+#filtres i {
+    border-radius: 50px;
+    width: 35px;
+    height: 35px;
+    background-color: rgb(208, 224, 255);
+    color: rgb(43, 108, 228);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#filtres p {
+    display: flex;
+    padding-left: 5px;
+}
+
+/* Style de la div infos (petit i + phrase) */
+
+#infos {
+    display: flex;
+    align-items: center;
+}
+
+#infos p {
+    padding-left: 1%;
+}
+
+#infos i {
+    border: 1px solid gainsboro;
+    border-radius: 50px;
+    color: rgb(43, 108, 228);
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 8px;
+}
+
+/* Style de la section */
+
+/* Style des asides Hébergements et Populaires */
+
+#container {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.element {
+    border-radius: 20px;
+    height: auto;
+    padding: 1%;
+}
+
+.element:nth-child(1) {
+    background-color: rgb(241, 241, 239);
+    width: 60%;
+}
+
+.element:nth-child(2) {
+    background-color: rgb(241, 241, 239);
+    width: 30%;
+}
+
+.stars {
+    font-size: x-small;
+}
+
+/* Style de l'aside Hébergement */
+
+#inAccomodations {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.accomodationPhoto {
+    background-color: white;
+    border-radius: 20px 20px 20px 20px;
+    border: 5px solid white;
+    height: 200px;
+    margin: 10px;
+    -webkit-box-shadow: 0px 0px 7px 3px rgba(0,0,0,0.18); 
+    box-shadow: 0px 0px 7px 3px rgba(0,0,0,0.18);
+}
+
+.accomodationPhoto img {
+    object-fit: cover;
+    width: 200px;
+    height: 100px;
+    border-radius: 20px 20px 0 0;
+}
+
+/* Style de l'aside Populaire */
+
+.popularPhoto {
+    display: flex;
+    border: 2px solid white;
+    border-radius: 20px;
+    background-color: white;
+    margin: 28px;
+    -webkit-box-shadow: 0px 0px 7px 3px rgba(0,0,0,0.18); 
+    box-shadow: 0px 0px 7px 3px rgba(0,0,0,0.18);
+
+}
+
+.popularPhoto img {
+    object-fit: cover;
+    width: 100px;
+    height: 110px;
+    border: 2px solid white;
+    border-radius: 20px 0 0 20px;
+}
+
+#mostPopular {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.popularText {
+    padding: 10px;
+}
+
+/* Style de l'aside Activités */
+
+#activities {
+    height: auto;
+    margin-bottom: 3%;
+}
+
+#activities h1 {
+    margin-left: 3%;
+}
+
+#activitiesPhotos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: flex-start;
+}
+
+.activitiesImages {
+    border-radius: 10px 10px 10px 10px;
+    -webkit-box-shadow: 0px 0px 7px 3px rgba(0,0,0,0.18); 
+    box-shadow: 0px 0px 7px 3px rgba(0,0,0,0.18);
+    max-height: 340px;
+    width: 250px;
+}
+
+.activitiesImages img {
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.simpleImage {
+    height: 340px;
+    display: flex;
+}
+
+.doubleImage {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 340px;
+}
+
+.simpleImage img {
+    height: 300px;
+    width: 250px;
+}
+
+.doubleImage img {
+    height: 100px;
+    width: 250px;
+}
+
+
+
+/* Style du footer */
+
+#footerContainer {
+    background-color: rgb(241, 241, 239);
+    display: flex;
+    justify-content: space-between;
+}
+
+.footerElement {
+    width: auto;
+}
+
+.footerElement ul {
+    list-style: none;
+}
+
+.footerElement li {
+    margin-top: 10px;
+}
+
+.footerElement h2 {
+    margin-left: 13%;
+    font-family: 'RalewayBold';
+}

@@ -1,0 +1,22 @@
+@media screen and (max-width: 920px) {
+
+    .element {
+        border-radius: 20px;
+        height: auto;
+        padding: 1%;
+    }
+    
+    .element:nth-child(1) {
+        background-color: rgb(241, 241, 239);
+        width: 100%;
+    }
+    
+    .element:nth-child(2) {
+        background-color: rgb(241, 241, 239);
+        width: 100%;
+    }
+
+
+
+
+}

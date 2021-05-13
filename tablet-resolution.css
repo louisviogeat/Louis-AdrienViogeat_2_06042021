@@ -1,9 +1,18 @@
-@media screen and (max-width: 920px) {
+@media screen and (min-width: 920px) and (max-width: 1200px) {
+
+    #menu {
+        width: 70%;
+    }
+    
+    #container {
+        flex-direction: column-reverse;
+    }
 
     .element {
         border-radius: 20px;
         height: auto;
         padding: 1%;
+        margin-bottom: 2%;
     }
     
     .element:nth-child(1) {
@@ -15,6 +24,7 @@
         background-color: rgb(241, 241, 239);
         width: 100%;
     }
+
 
 
 

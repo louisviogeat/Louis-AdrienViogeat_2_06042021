@@ -1,3 +1,5 @@
+/* Style général */
+
 @font-face {
     font-family: 'RalewayMedium';
     src: url(police/Raleway-Regular.ttf);
@@ -25,12 +27,9 @@ p {
     font-size: small;
 }
 
-/* Style du Header */
+/* Fin style général */
 
-#logo {
-    width: 100px;
-    height: 50px;
-}
+/* Style du Header */
 
 header h1 {
 
@@ -47,23 +46,40 @@ header {
 #banner {
     display: flex;
     justify-content: space-between;
+    border: 2px solid rebeccapurple;
+    align-items: center;
 }
 
-nav {
+#menu {
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
     justify-content: space-around;
     margin-right: 15px;
-    align-items: flex-end;
+    align-items: center;
     width: 40%;
+    border: 2px solid blue;
 }
+
 #logo {
     width: 100px;
     height: 50px;
 }
 
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border: 2px solid violet;
+    width: 300px;
+    height: 100px;
+}
+
 nav a {
     text-decoration: none;
     color: black;
+    justify-content: space-between;
 }
 
 nav a:hover {
@@ -72,19 +88,15 @@ nav a:hover {
 }
 
 #banner button {
-    border: none;
+    border: 1px solid goldenrod;
     background: none;
+    align-content: center;
 }
 
 #banner button a {
     color: rgb(0, 140, 255);
     font-size: medium;
 }
-
-.menu:nth-child(2) {
-    color: blue;
-}
-
 
 /* Syle de la barre de recherche */
 
@@ -270,7 +282,10 @@ nav a:hover {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
 
+#mostPopular i {
+    margin-right: 3%;
 }
 
 .popularText {

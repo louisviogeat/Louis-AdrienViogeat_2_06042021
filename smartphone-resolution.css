@@ -16,7 +16,19 @@
     }
 
     /*Banner*/
+    
+    #menu {
+        width: 100%;
+    }
+    
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 300px;
+    }
 
+   
     /*Banner*/
     header h1 {
         font-size: x-large;

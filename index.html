@@ -15,17 +15,17 @@
     <header>
         <div id="banner">
 <!-- logo Réservia -->
-            <img id="logo" src="images/logo/Reservia@3x.png" alt="logo">
+            <div id="logoDiv">
+                <img id="logo" src="images/logo/Reservia@3x.png" alt="logo">
+            </div>
 <!-- Menu en haut à droite, Hébergements, Activités, S'inscrire -->
             <div id="menu">
-                <nav>
-                    <a class="menu" href="#">Hébergements</a>
-                    <a class="menu" href="#">Activités</a> 
-                </nav>  
-                <button>
-                    <a class="menu" href="#"><strong>S'inscrire</strong></a>
-                </button>
+                <a href="#">Hébergements</a>
+                <a href="#">Activités</a> 
             </div>
+            <div id="inscription">
+                <button> <strong>S'inscrire</strong></button>
+            </div> 
         </div>
 
 <!-- Titre et sous-titre -->
@@ -36,32 +36,37 @@
         
 <!-- Barre de recherche -->
         <div id="search">
-            <i class="fas fa-map-marker-alt"></i>
+            <i id="localisationLogo" class="fas fa-map-marker-alt"></i>
             <input type="text" placeholder="Marseille, France">
-            <button>Rechercher</button>
+            <button>
+                <span id="searchText">Rechercher</span>
+                <span id="searchLogo"><i class="fas fa-search"></i></span>
+            </button>
         </div>
+
 <!-- Barre de filtres -->
         <div id="filtres">
             <h2>Filtres</h2>
             <ul>
                 <li>
                     <i class="fas fa-money-bill-wave"></i>
-                    <p><strong>Économique</strong></p>
+                    <span><strong>Économique</strong></span>
                 </li>
                 <li>
                     <i class="fas fa-child"></i>
-                    <p><strong>Familial</strong></p>
+                    <span><strong>Familial</strong></span>
                 </li>
                 <li>
                     <i class="fas fa-heart"></i>
-                   <p><strong>Romantique</strong></p>
+                   <span><strong>Romantique</strong></span>
                 </li>
                 <li>
                     <i class="fas fa-dog"></i>
-                    <p><strong>Animaux autorisés</strong></p>
+                    <span><strong>Animaux autorisés</strong></span>
                 </li>
             </ul>
         </div>
+
 <!-- info-bulle + texte -->
         <div id="infos">
             <i class="fas fa-info"></i>
@@ -72,10 +77,11 @@
 <!-- La section regroupant les vignettes hébergements, populaires et activités -->
     <section>
 <!-- Le conteneur contenant les Hébergements à Marseille et Les plus populaires -->        
+        <h2 id="sectionTitle">Titre de la section</h2>
         <div id="container">
 <!-- L'aside contenant les Hébergements à Marseille (6 vignettes) -->
             <aside id="accomodations" class="element">
-                <h1>Hébergements à Marseille</h1> </br>
+                <h2>Hébergements à Marseille</h2>
                 <div id="inAccomodations">
 <!-- vignette 1 -->
                     <article class="accomodationPhoto">
@@ -181,7 +187,7 @@
 <!-- L'aside contenant les Hébergements les plus populaires (3 vignettes) -->
             <aside id="popular" class="element">
                 <div id="mostPopular">
-                    <h1>Les plus populaires</h1>
+                    <h2>Les plus populaires</h2>
                     <i class="fas fa-chart-line"></i>  
                 </div>
                 <div id="inPopular">
@@ -245,7 +251,7 @@
         </div>
 <!-- L'aside contenant les Activités à Marseille (6 vignettes) -->
         <aside id="activities">
-            <h1>Activités à Marseille</h1>
+            <h2>Activités à Marseille</h2>
             <div id="activitiesPhotos">
 <!-- Vignette 1 -->
                 <div class="simpleImage">
@@ -264,7 +270,7 @@
 <!-- Vignette 3 -->
                     <div class="activitiesImages">
                         <img src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Iles de Frioul">
-                        <h2>Iles de Frioul</h2>
+                        <h2>Îles du Frioul</h2>
                     </div>
                 </div>
 <!-- Vignette 4 -->

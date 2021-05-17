@@ -27,15 +27,13 @@ p {
     font-size: small;
 }
 
-/* Fin style général */
-
-/* Style du Header */
-
-header h1 {
-
+h1 {
     font-size: large;
     font-weight: bold;
 }
+/* Fin style général */
+
+/* Style du Header */
 
 header {
     margin-left: 3%;
@@ -45,9 +43,11 @@ header {
 
 #banner {
     display: flex;
-    justify-content: space-between;
-    border: 2px solid rebeccapurple;
     align-items: center;
+}
+
+#logoDiv {
+    width: 60%;
 }
 
 #menu {
@@ -55,10 +55,14 @@ header {
     flex-direction: row;
     flex-wrap: wrap-reverse;
     justify-content: space-around;
-    margin-right: 15px;
     align-items: center;
-    width: 40%;
-    border: 2px solid blue;
+    width: 30%;
+}
+
+#inscription {
+    width: 15%;
+    display: flex;
+    justify-content: center;
 }
 
 #logo {
@@ -66,53 +70,44 @@ header {
     height: 50px;
 }
 
-nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    border: 2px solid violet;
-    width: 300px;
-    height: 100px;
-}
 
-nav a {
+#menu a {
     text-decoration: none;
     color: black;
     justify-content: space-between;
+    padding-top: 5%;
 }
 
-nav a:hover {
+#menu a:hover {
     border-top: 2px solid blue;
     color: blue;
 }
 
 #banner button {
-    border: 1px solid goldenrod;
     background: none;
     align-content: center;
-}
-
-#banner button a {
     color: rgb(0, 140, 255);
     font-size: medium;
+    border: none;
+    padding-top: 9%;
 }
 
 /* Syle de la barre de recherche */
 
 #search {
-    border: 1px solid rgb(202, 196, 196);
-    width: 30%;
+    width: 40%;
+    height: 40px;
     display: flex;
     align-items: center;
     border-radius: 10px 10px 10px 10px;
-    justify-content: space-between;
+    border: 1px solid rgb(238, 235, 235);
+
 }
 
-#search i {
+#localisationLogo {
     background-color: rgb(238, 235, 235);
-    height: 30px;
-    width: 30px;
+    height: 100%;
+    width: 10%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -121,6 +116,9 @@ nav a:hover {
 
 #search input {
     border: none;
+    width: 70%;
+    height: 90%;
+    padding-left: 5%;
 }
 
 ::placeholder {
@@ -131,15 +129,22 @@ nav a:hover {
 #search button {
     background-color: rgb(0, 102, 255);
     color: white;
-    height: 30px;
+    height: 100%;
     border-radius: 0 10px 10px 0;
     border: none;
+    width: 20%;
+}
+
+#searchLogo {
+    display: none;
 }
 
 /* Syle de la zone de filtres */
 
 #filtres {
     display: flex;
+    width: 65%;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -155,18 +160,17 @@ nav a:hover {
     border: 2px solid gainsboro;
     border-left-style: none;
     border-radius: 30px;
-    height: 30px;
     align-items: center;
     justify-content: space-between;
-    padding: 0 10px 0 0;
-    margin: 2%;
+    padding-right: 5%;
     white-space: nowrap;
+    height: 20%;
 }
 
 #filtres i {
     border-radius: 50px;
-    width: 35px;
-    height: 35px;
+    width: 50px;
+    height: 50px;
     background-color: rgb(208, 224, 255);
     color: rgb(43, 108, 228);
     display: flex;
@@ -174,10 +178,11 @@ nav a:hover {
     justify-content: center;
 }
 
-#filtres p {
-    display: flex;
-    padding-left: 5px;
+#filtres span {
+    margin-left: 3%;
+    font-family: 'RalewayBold';
 }
+
 
 /* Style de la div infos (petit i + phrase) */
 
@@ -204,12 +209,15 @@ nav a:hover {
 
 /* Style de la section */
 
+#sectionTitle {
+    display: none;
+}
+
 /* Style des asides Hébergements et Populaires */
 
 #container {
     display: flex;
     justify-content: space-around;
-
 }
 
 .element {
@@ -243,38 +251,45 @@ nav a:hover {
 .accomodationPhoto {
     background-color: white;
     border-radius: 20px 20px 20px 20px;
-    border: 5px solid white;
+    padding:0.5%;
     height: 200px;
+    width: 25%;
     margin: 10px;
-    -webkit-box-shadow: 0px 0px 7px 3px rgba(0,0,0,0.18); 
     box-shadow: 0px 0px 7px 3px rgba(0,0,0,0.18);
 }
 
 .accomodationPhoto img {
     object-fit: cover;
-    width: 200px;
-    height: 100px;
+    width: 100%;
+    height: 50%;
     border-radius: 20px 20px 0 0;
 }
 
 /* Style de l'aside Populaire */
 
+#inPopular {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    height: 90%;
+}
+
 .popularPhoto {
     display: flex;
-    border: 2px solid white;
+    justify-content: space-between;
+    height: 25%;
+    padding: 1%;
     border-radius: 20px;
     background-color: white;
-    margin: 28px;
-    -webkit-box-shadow: 0px 0px 7px 3px rgba(0,0,0,0.18); 
     box-shadow: 0px 0px 7px 3px rgba(0,0,0,0.18);
 
 }
 
 .popularPhoto img {
     object-fit: cover;
-    width: 100px;
-    height: 110px;
-    border: 2px solid white;
+    width: 40%;
+    height: 100%;
     border-radius: 20px 0 0 20px;
 }
 
@@ -289,7 +304,7 @@ nav a:hover {
 }
 
 .popularText {
-    padding: 10px;
+  width: 55%;
 }
 
 /* Style de l'aside Activités */
@@ -299,7 +314,7 @@ nav a:hover {
     margin-bottom: 3%;
 }
 
-#activities h1 {
+#activities h2 {
     margin-left: 3%;
 }
 
@@ -357,6 +372,7 @@ nav a:hover {
 
 .footerElement {
     width: auto;
+    margin-right: 2%;
 }
 
 .footerElement ul {

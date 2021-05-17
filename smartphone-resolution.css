@@ -2,9 +2,16 @@
 {
 
     body {
-        padding: 2em;
         width: auto;
+    }
 
+    header {
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+
+    h1 {
+        font-size: x-large;
     }
 
     h2 {
@@ -12,31 +19,72 @@
     }
 
     p {
-        font-size: medium;
+        font-size: large;
     }
 
     /*Banner*/
     
+    #banner {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    #inscription {
+        order: -1;
+        padding-bottom: 2%;
+    }    
+
+    #logoDiv {
+        order: -2;
+        padding-bottom: 2%;
+    }
+
     #menu {
         width: 100%;
     }
-    
-    nav {
+
+    #menu a {
+        border-bottom: 3px solid rgb(238, 238, 238);
+        padding-bottom: 10px;
+        padding-top: 0%;
+        width: 50%;
         display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        width: 300px;
+        justify-content: center;
+
     }
 
+    #menu a:hover {
+        border-bottom: 3px solid blue;
+        border-top: none;
+        color: blue;
+    }
+
+    #banner button {
+        padding-top: 0%;
+    }
    
     /*Banner*/
-    header h1 {
-        font-size: x-large;
-    }
 
     #search {
-        width: 300px;
-        height: 10%;
+        width: 100%;
+    }
+
+    #searchLogo {
+        display: initial;
+    }
+
+    #searchText {
+        display: none;
+    }
+
+    #search button {
+        border-radius: 10px 10px 10px 10px;
+        border: none;
+        width: 10%;
+    }
+
+    #search input {
+        width: 80%;
     }
 
     ::placeholder {
@@ -52,6 +100,7 @@
 
     #filtres ul {
         flex-wrap: wrap;
+        justify-content: flex-start;
     }
 
     #filtres li {
@@ -65,10 +114,7 @@
     }
 
     .element {
-        border-radius: 20px;
-        height: auto;
-        padding: 1%;
-        margin: 2%;
+        border-radius: unset;
     }
 
     .element:nth-child(1) {
@@ -81,22 +127,34 @@
     }
 
     .accomodationPhoto {
-        height: 230px;
-        width: 380px;
+        height: 270px;
+        width: 100%;
     }
     
     .accomodationPhoto img {
-        width: 380px;
-        height: 110px;
+        width: 100%;
+    }
+
+    #popular {
+        height: 700px;
+    }
+
+    .popularPhoto {
+        height: 150px;
+        width: 95%;
+    }
+
+    .popularPhoto img {
+        width: 35%;
     }
 
     .activitiesImages {
-        width: 400px;
+        width: 100%;
     }
 
     .simpleImage {
         height: 200px;
-        width: 400px;
+        width: 100%;
         display: flex;
         justify-content: center;
     }
@@ -104,24 +162,22 @@
     .doubleImage {
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: space-around;
         align-items: center;
         height: 500px;
-        width: 300px;
-    }
-
-    .doubleImage .activitiesImages {
-        margin-top: 10%;
+        width: 100%;
+        margin-top: 3%;
+        margin-bottom: 3%;
     }
     
     .simpleImage img {
-        height: 150px;
-        width: 400px;
+        height: 70%;
+        width: 100%;
     }
     
     .doubleImage img {
         height: 150px;
-        width: 400px;
+        width: 100%;
     }
 
     #footerContainer {

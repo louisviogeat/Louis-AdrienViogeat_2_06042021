@@ -1,4 +1,4 @@
-@media screen and (min-width: 920px) and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 991px) {
 
     header {
         margin-left: 0%;
@@ -9,11 +9,11 @@
     }
 
     #menu {
-        width: 70%;
+        width: 25%;
     }
 
     #filtres {
-        width: 80%;
+        width: 100%;
     }
     
     #container {

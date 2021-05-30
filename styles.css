@@ -170,6 +170,10 @@ header {
     white-space: nowrap;
 }
 
+#filtres li:hover {
+    background-color: rgb(208, 224, 255);
+}
+
 #filtres i {
     border-radius: 50px;
     width: 50px;
@@ -268,6 +272,7 @@ header {
 article a {
     text-decoration: none;
     color: unset;
+    height: 100%;
 }
 
 #inAccomodations {
@@ -282,7 +287,7 @@ article a {
     background-color: white;
     border-radius: 15px;
     padding:0.5%;
-    height: 135px;
+    height: 150px;
     width: 28%;
     margin: 2% 0 2% 0;
     box-shadow: 0px 0px 7px 3px rgba(0,0,0,0.18);
@@ -291,7 +296,7 @@ article a {
 .accomodationPhoto img {
     object-fit: cover;
     width: 100%;
-    height: 45%;
+    height: 60%;
     border-radius: 15px 15px 0 0;
 }
 
@@ -323,6 +328,7 @@ article a {
 
 .popularPhoto {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     height: 28%;
     padding: 1%;
@@ -332,12 +338,29 @@ article a {
     margin: 0 5% 0 5%;
 }
 
+.popularPhoto a {
+    display: flex;
+}
+
 .popularPhoto img {
     object-fit: cover;
-    width: 40%;
+    width: 30%;
     height: 100%;
     border-radius: 20px 0 0 20px;
 }
+
+.popularText {
+    margin: 5% 0 0 10%;
+    width: 55%;
+  }
+
+  .popularText h3 {
+    margin: 0;
+  }
+
+  .popularText p {
+      margin: 5% 0 15% ;
+  }
 
 #mostPopular {
     display: flex;
@@ -349,15 +372,19 @@ article a {
     margin-right: 3%;
 }
 
-.popularText {
-  width: 55%;
-}
+
 
 /* Style de l'aside Activités */
 
 #activities {
     height: auto;
     margin-bottom: 3%;
+}
+
+.activitiesImages a {
+    text-decoration: none;
+    color: unset;
+    height: 100%;
 }
 
 #activities h2 {
@@ -413,12 +440,11 @@ article a {
 #footerContainer {
     background-color: rgb(241, 241, 239);
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .footerElement {
-    width: auto;
-    margin-right: 2%;
+    width: 30%;
 }
 
 .footerElement ul {
@@ -426,9 +452,9 @@ article a {
 }
 
 .footerElement li {
-    margin-top: 10px;
+    margin: 0 0 0 0;
 }
 
 .footerElement h3 {
-    margin-left: 13%;
+    margin-left: 10%;
 }

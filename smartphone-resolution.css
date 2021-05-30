@@ -138,6 +138,10 @@
     .accomodationPhoto img {
         width: 100%;
     }
+    
+    .textVignette h3 {
+        font-size: medium;
+    }
 
     #popular {
         height: 700px;
@@ -175,7 +179,7 @@
     }
     
     .simpleImage img {
-        height: 70%;
+        height: 80%;
         width: 100%;
     }
     
@@ -193,7 +197,9 @@
         width: 100%;
     }
 
-
+    .footerElement h3 {
+        margin-left: 8%;
+    }
     
 
 }

@@ -18,8 +18,12 @@
         font-size: large;
     }
 
+    h3 {
+        font-size: medium;
+    }
+
     p {
-        font-size: large;
+        font-size: small;
     }
 
     /*Banner*/
@@ -189,9 +193,6 @@
         width: 100%;
     }
 
-    .footerElement li {
-        margin-left: 3%;
-    }
 
     
 

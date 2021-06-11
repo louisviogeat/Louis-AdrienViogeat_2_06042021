@@ -150,7 +150,7 @@
 
     .popularPhoto {
         height: 120px;
-        width: 90%;
+        margin-right: 5%;
     }
 
     .popularPhoto img {
@@ -211,5 +211,12 @@
         margin-left: 8%;
     }
     
+    #pomegues {
+        height: 40%;
+    }
+    
+    #longchamp {
+        height: 40%;
+    }
 
 }

@@ -156,7 +156,7 @@ header {
     list-style-type: none;
     display: flex;
     justify-content: space-around;
-    width: 100%;
+    width: 80%;
 }
 
 #filtres li {
@@ -434,6 +434,21 @@ article a {
     width: 100%;
 }
 
+#pomegues {
+    height: 52%;
+}
+
+#pomegues img {
+    height: 80%;
+}
+
+#longchamp {
+    height: 48%;
+}
+
+#longchamp img {
+    height: 80%;
+}
 
 
 /* Style du footer */
